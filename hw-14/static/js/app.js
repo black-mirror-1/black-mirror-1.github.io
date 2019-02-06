@@ -11,6 +11,7 @@ d3.select('#filter-btn').on('click', function() {
     //     d3.select('#filters').;
     // }
     var tableBody = d3.select('#ufo-table').select('tbody');
+    tableBody.html('')
     data.forEach(d => {
         if(d['datetime'] === datetime) {
             var row = tableBody.append('tr');
